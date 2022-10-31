@@ -1,12 +1,11 @@
-def pali(n):
-    s=0
-    while(n):
-        r=n%10
-        s=s*10+r
-        n=n//10
-    return s
-n=int(input())
-if(n==pali(n)):
-    print(True)
+num=int(input())
+temp=num
+rev=0
+while(num!=0):
+    dig=num%10
+    rev=rev*10+dig
+    num=num//10
+if(temp==rev):
+    print("True")
 else:
-    print(False)
+    print("False")
